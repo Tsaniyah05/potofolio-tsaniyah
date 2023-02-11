@@ -7,21 +7,20 @@ li {
     list-style: none;
 }
 
-.bg {
+body{
     background-color: #1E1E1E;
 }
 
+.app{
+    padding:  0 100px;
+}
+
 .header {
-    width: 1px solid;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
     border-radius: 10px;
-    margin: 40px;
-    padding: 10px;
-    height: 15px;
-    left: 300px;
-    top: 38px;
+    padding: 14px;
+    margin: 20px 0;
     background: rgba(123, 74, 226, 0.05);
 }
 
@@ -35,8 +34,6 @@ li {
     font-size: 10px;
     width: 1px solid;
     height: 15px;
-    left: 10px;
-    top: 300px;
     font-family: 'Open Sans';
     color: rgba(123, 74, 226, 0.5);
 }
@@ -45,16 +42,16 @@ li {
     color: #fff;
 }
 
-.hero {}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .hero-title {}
 
 .hero-title p:nth-child(1) {
-    position: absolute;
     width: 1px solid;
-    height: 300px;
-    left: 57px;
-    top: 50px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 30px;
@@ -67,11 +64,7 @@ li {
 }
 
 .hero-title p:nth-child(2) {
-    position: absolute;
     width: 1px solid;
-    height: 450px;
-    left: 55px;
-    top: 220px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 60px;
@@ -81,11 +74,7 @@ li {
 }
 
 .hero-title p:nth-child(3) {
-    position: absolute;
     width: 1px solid;
-    height: 30px;
-    left: 55px;
-    top: 300px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -99,28 +88,23 @@ li {
 }
 
 .hero-title-icon {
-    position: absolute;
-    left: 55px;
     right: 25px;
-    top: 340px;
     font-size: 18px;
     color: grey;
 }
 
 .hero-img {
-    position: absolute;
     width: 1px solid;
     height: 280px;
-    left: 490px;
-    top: 130px;
+}
+
+.hero-img img {
+    height: 100%;
 }
 
 .hero-btn {
-    position: absolute;
     width: 1px solid;
     height: 40px;
-    left: 1095px;
-    top: 258px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 200;
@@ -128,4 +112,12 @@ li {
     line-height: 18px;
     align-items: center;
     color: rgba(123, 74, 226, 0.5);
+}
+
+/* Responsive Breakpoint */
+@media (max-width:1000px) {
+    .hero {
+        flex-direction: column;
+        gap: 50px;
+    }
 }
